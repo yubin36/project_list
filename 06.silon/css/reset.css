@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap");
+
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; list-style: none;}
+
+body{ margin: 0 auto; font-family: 'Spoqa Han Sans', '맑은 고딕', 'Malgun Gothic', 'Sans-serif'; font-size: 14px; letter-spacing: -0.6px; line-height: 27px; color: #000;}
+a, img{display: block; color: #000; cursor: pointer;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: 1rem; font-weight: normal;}
+button{border: none; background: none; cursor: pointer;}
+.clearfix::before,
+.clearfix::after{content: ""; display: block; clear: both;}
