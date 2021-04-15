@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@font-face {
+    font-family: 'BMEULJIRO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { font-family: 'Spoqa Han Sans', '맑은 고딕', 'Malgun Gothic', 'Sans-serif'; font-size: 16px; letter-spacing: -0.6px; line-height: 1; color: #1a1a1a;}
+
+body,h1,h2,h3,h4,h5,h6,ul,p{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #1a1a1a;}
+address{font-style: normal;}
+button{background-color: transparent; border: none; outline: none; cursor: pointer; padding: 0; }
+.clearfix::before,
+.clearfix::after{display: block; content: ""; clear: both;}
+input[type="text"],
+input[type=""]{vertical-align: middle; border: none; background: none; outline: none;}
+img{vertical-align: middle;}
