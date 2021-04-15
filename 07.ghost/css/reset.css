@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{font-family: 'Godo'; font-size: 18px; line-height: 1; color: #191919;}
+body,h1,h2,h3,h4,h5,h6,p,ul,button{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: 18px; font-weight: normal; }
+li{list-style: none;}
+a{text-decoration: none; color: #191919;}
+button{background: none; border: none; cursor: pointer; outline: none;}
+img{vertical-align: top;}
