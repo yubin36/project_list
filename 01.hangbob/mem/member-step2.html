@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>정보입력_행복은 간장밥</title>
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/member.css" rel="stylesheet">
+   	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/login-member.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="header-top">
+			<div class="inner-wrap">
+				<ul class="util-menu-login">
+					<li><a href="../login/login.html">로그인</a></li>
+					<li><a href="member-step1.html">회원가입</a></li>
+				</ul>
+				<ul class="util-menu-sns">	
+					<li><a href="#"><img src="../images/header-sns-insta_icon.png" alt="header-insta"></a></li>
+					<li><a href="#"><img src="../images/header-sns-face_icon.png" alt="header-face"></a></li>
+					<li><a href="#"><img src="../images/header-sns-blog_icon.png" alt="header-blog"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="inner-wrap">
+				<h1><a href="../index.html"><img src="../images/header-logo.png" alt="헤더로고"></a></h1>
+				<nav>
+					<ul class="gnb">
+						<li><a href="#">행복은 간장밥</a>
+							<ul class="sub-menu">
+								<li><a href="#">브랜드 스토리</a></li>
+								<li><a href="#">인사말</a></li>
+								<li><a href="#">BI</a></li>
+								<li><a href="#">오시는 길</a></li>
+							</ul>
+						</li>
+						<li><a href="#">메뉴소개</a>
+							<ul class="sub-menu">
+								<li><a href="#">밥류</a></li>
+								<li><a href="#">면류</a></li>
+							</ul>
+						</li>
+						<li><a href="#">매장안내</a>
+							<ul class="sub-menu">
+								<li><a href="#">매장검색</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul> 
+						</li>
+						<li><a href="#">프랜차이즈</a>
+							<ul class="sub-menu">
+								<li><a href="#">성공 경쟁력</a></li>
+								<li><a href="#">창업 안내</a></li>
+								<li><a href="#">창업 F&amp;A</a></li>
+								<li><a href="#">성공 경쟁력</a></li>
+							</ul>
+						</li>
+						<li><a href="#">소통공간</a>
+							<ul class="sub-menu">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">SNS</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="sub-bg"></div>
+	</header>
+    <div id="container">
+         <div class="breadcrumb">
+            <div class="inner-wrap">
+                <img src="../login/images/breadcrumbs_ico.png" alt="홈">  &gt;  로그인
+            </div>
+        </div>
+        <div class="header-tit">
+            <h2>Join</h2>
+        </div>
+        <div class="step">
+            <ul>
+                <li>01. 약관동의</li>
+                <li class="on">02. 정보입력</li>
+                <li>03. 가입완료</li>
+            </ul>
+        </div>
+        <div class="join-wrap mem2_join-wrap">
+            <form action="#" method="" id="joinForm" name="">
+                <section class="sec sec-1">
+                    <h3>필수정보</h3>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <span class="int-box">
+                                    <input type="text" id="userId" name="userId" class="int" placeholder="아이디 입력">
+                                </span>
+                                <button type="button" id="id-chk" class="btn-chk">중복확인</button>
+                                <p class="error-txt" id="id-msg">※잘못된 아이디 입니다.</p>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="int-box">
+                                        <input type="password" id="userPw" name="userPw" class="int" placeholder="비밀번호 입력 (영문/숫지/특수문자 조합 8자 이상)">
+                                    </span>
+                                </div>
+                                <p class="error-txt" id="pw1-msg">※비밀번호를 입력하세요.</p>
+                                <div>
+                                    <span class="int-box btn-chk-box">
+                                        <input type="password" id="userPwdConfirm" name="userPwdConfirm" class="int" placeholder="비밀번호 확인">
+                                    </span>
+                                    <button type="button" id="pw-chk" class="btn-chk btn-PW-chk">확인</button>
+                                    <p class="error-txt" id="pw2-msg">※비밀번호가 일치하지 않습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="int-box">
+                                    <input type="tel" id="phoneNumber" name="" class="int" placeholder="휴대폰 번호 ( ' -' , 띄어쓰기  없이 입력해주세요.)">
+                                </span>
+                                <p class="error-txt" id="pnum-msg">※핸드폰 번호를 입력해 주세요.</p>
+                            </li>
+                            <li id="email-box">
+                                <span class="int-emailBox">
+                                    <input type="email" id="emailId" name="emailId" class="int" placeholder="이메일 아이디">
+                                </span>
+                                <span class="at">@</span>
+                                <span class="int-emailBox">
+                                    <select id="" name="" class="sel" title="이메일">
+                                        <option value="이메일" selected>이메일</option> 
+                                        <option value="네이버">naver.com</option> 
+                                        <option value="다음">hanmail.net</option> 
+                                    </select>
+                                </span>
+                                <p class="error-txt" id="email-msg">※이메일을 입력해 주세요.</p>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+                <section class="sec sec-2">
+                    <h3>부가정보입력</h3>
+                    <p class="tit">행복은 간장밥 소식, 이벤트 당첨결과등을 받아 보실 수 있습니다.</p>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <span class="txt">이메일 수신여부</span>
+                                <div class="radio-chk">
+                                    <span class="inp">
+                                        <input type="radio" id="emailY" name="emailRcv" class="emailRcv">
+                                    </span>
+                                    <label for="emailY">수신</label>
+                                    <span class="inp">
+                                        <input type="radio" id="emailN" name="emailRcv" class="emailRcv">
+                                    </span>
+                                    <label for="emailN">수신 거부</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="txt">SNS 수신여부</span>
+                                <div class="radio-chk">
+                                    <span class="inp">
+                                        <input type="radio" id="snsY" name="snsRcv" class="snsRcv">
+                                    </span>
+                                    <label for="snsY">수신</label>
+                                    <span class="inp">
+                                        <input type="radio" id="snsN" name="snsRcv" class="snsRcv">
+                                    </span>
+                                    <label for="snsN">수신 거부</label>
+                                </div>
+                                <p class="error-txt" id="rcv-msg">※수신여부를 확인해 주세요.</p>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+                <div class="btn-wrap">
+                    <button type="reset" class="btn btn-cancel" onclick="location.href='member-step2.html'">취소</button>
+                    <button type="submit" class="btn btn-next" onclick="location.href='member-step3.html'">가입완료</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-left">
+            <div class="inner-wrap">
+                <ul class="sns-link">
+                    <li>
+                        <a href="#">
+                            <span>Blog</span>
+                            <img src="../images/footer-sns-blog.png" alt="blog">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Facebook</span>
+                            <img src="../images/footer-sns-facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Instagram</span>
+                            <img src="../images/footer-sns-insta.png" alt="insta">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="inner-wrap">
+                <div class="footer-info">
+                    <ul class="tel-mail">
+                        <li class="tel">070-8844-0935</li>
+                        <li class="mail">haengbob@naver.com</li>
+                    </ul>
+                    <ul class="footer-link">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">프랜차이즈</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일 무단수집거부</a></li>
+                    </ul>
+                    <div class="info">
+                        <address>
+                        행복은 간장밥 대표 : 홍 찬, 사업자 등록 번호 : 581-07-01133<br>
+                        서울시 마포구 양화로 45,  메세나 폴리스 몰 B1112호
+                        </address>
+                        <p class="copyright">
+                            COPYRIGHT &copy;2020 ALL RIGHTS RESERVED
+                        </p>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="../images/footer-logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+

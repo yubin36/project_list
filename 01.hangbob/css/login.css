@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#container .header-tit h2{padding-bottom: 45px;}
+#container .header-tit h2:before{content: ""; display: block; width: 700px; height: 3px; background-color: #191919; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);}
+.login-wrap{width: 700px; margin: 0 auto; padding-bottom: 130px;}
+.login-wrap ul li{width: 500px; margin: 0 auto;}
+.login-wrap ul li+li{margin-top: 10px;}
+.login-wrap ul li:after{content: ""; display: block; clear: both;}
+.login-chk{float: left;}
+.login-chk label{vertical-align: middle; font-size: 14px;}
+.find-account{float: right;}
+.find-account a{display: inline-block; font-size:14px; padding: 0 10px; position: relative;}
+.find-account a:after{content: "";display: inline-block; width: 1px; height: 11px; background-color: #cecece; position: absolute; left: -1px; top: 6px;}
+.find-account a:nth-child(1):after {display: none;}
+.find-account a span{display: block;  border-bottom: 1px solid #505050;}
+.find-account a:hover span{border-color: #f3c200;}
+.btn-wrap .btn-login{width: 100%; background-color: #ffe572; border-color: transparent; font-family: 'Noto Sans KR'; font-weight: 500; color: #1a1a1a; font-size: 20px; padding: 15px 0; outline: none;}
+.btn-login_join{width: 700px; height: 145px; box-sizing: border-box; margin: 0 auto; border-radius: 20px; border: 1px solid #cecece; padding: 20px 25px 15px 25px; margin-top: 55px;}
+.btn-login_join:before{content: "";display: block; clear: both;}
+.btn-login_join .tit{float: left; border-bottom: 1px solid #505050; font-weight: 700;}
+.btn-login_join .right-box{float: right;}
+.btn-login_join .right-box .txt{font-size: 14px; margin-bottom: 30px;}
+.btn-login_join .right-box a{border: 1px solid #ffe572; border-radius: 20px; padding: 5px 40px 10px 30px; margin-left: 65px; }
+.btn-login_join .right-box a span{padding-left: 38px; background: url(../login/images/join-icon.png) no-repeat left center; font-weight: 700;}
