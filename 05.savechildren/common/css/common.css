@@ -53,7 +53,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .mainCon1 .mainTit{font-size: 40px;}
 .mainCon1 .mainTxt{font-size: 18px; margin-bottom: 20px;}
 .mainCon1 .mainTit ,
-.mainCon1 .mainTxt{position: relative; z-index: 20; top: 130px; opacity: 0; padding-bottom: 20px;}
+.mainCon1 .mainTxt{position: relative; z-index: 20; top: 0px; opacity: 1; padding-bottom: 20px;}
 .mainCon1 .mainCon1List{position: relative; z-index: 20; top: 150px; opacity: 0;}
 .mainCon1 .mainCon1List:after{content: ""; display: block; clear: both;}
 .mainCon1 .mainCon1List li{float: left; width: 570px;}
